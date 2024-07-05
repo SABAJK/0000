@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>photo_2024-07-05_19-03-14.jpg</file>
+        <file>photo_2024-07-05_19-17-13.jpg</file>
+        <file>users.json</file>
+    </qresource>
+</RCC>

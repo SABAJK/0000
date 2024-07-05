@@ -15,9 +15,10 @@ MainWindow::~MainWindow()
 }
 
 
-void MainWindow::on_pushButton_clicked()
+void MainWindow::on_pushButton_login_clicked()
 {
     LogInDialog logInDialog;
     logInDialog.exec();
 }
+
 
