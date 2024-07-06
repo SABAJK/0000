@@ -12,16 +12,21 @@ SOURCES += \
     logindialog.cpp \
     loginmanager.cpp \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    signup.cpp \
+    signupdialog.cpp
 
 HEADERS += \
     logindialog.h \
     loginmanager.h \
-    mainwindow.h
+    mainwindow.h \
+    signup.h \
+    signupdialog.h
 
 FORMS += \
     logindialog.ui \
-    mainwindow.ui
+    mainwindow.ui \
+    signupdialog.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

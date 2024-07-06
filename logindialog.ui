@@ -16,7 +16,7 @@
   <property name="styleSheet">
    <string notr="true">background-image: url(:/photo_2024-07-05_19-17-13.jpg);</string>
   </property>
-  <widget class="QPushButton" name="pushButton">
+  <widget class="QPushButton" name="pushButton_login">
    <property name="geometry">
     <rect>
      <x>340</x>
@@ -76,6 +76,9 @@ color: rgb(255, 255, 255);</string>
    <property name="styleSheet">
     <string notr="true">font: 16pt &quot;Sitka&quot;;
 color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
    </property>
   </widget>
   <widget class="QLabel" name="label">

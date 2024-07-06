@@ -1,6 +1,6 @@
-#include "logindialog.h"
-#include "ui_logindialog.h"
-#include "loginmanager.h"
+#include "LogInDialog.h"
+#include "ui_LogInDialog.h"
+#include "SignUp.h"
 #include <QMessageBox>
 
 LogInDialog::LogInDialog(QWidget *parent) :
@@ -19,14 +19,10 @@ void LogInDialog::on_pushButton_login_clicked()
 {
     QString username = ui->lineEdit_username->text();
     QString password = ui->lineEdit_password->text();
-    LoginManager loginManager;
-    if(loginManager.login(username, password)){
-        QMessageBox::information(this, "login", "username and password are correct");
-        accept();
-    }
-    else
-    {
-        QMessageBox::warning(this,"login", "username or password are not correct");
+
+    if (SignUp::validateUser(username, password)) {
+        QMessageBox::information(this, "Login Successful", "User logged in successfully.");
+    } else {
+        QMessageBox::warning(this, "Login Failed", "Invalid username or password.");
     }
 }
-
