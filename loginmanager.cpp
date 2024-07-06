@@ -4,7 +4,7 @@ LoginManager::LoginManager(QObject *parent) : QObject(parent) {
 }
 
 bool LoginManager::login(const QString &username, const QString &password) {
-    QString filePath = ":/users.json";
+    QString filePath = "D:/users.json";
     QJsonObject users = readJsonFile(filePath);
 
     if (users.contains(username) && users[username].toString() == password) {

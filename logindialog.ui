@@ -14,7 +14,9 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(:/photo_2024-07-05_19-17-13.jpg);</string>
+   <string notr="true">background-image: url(:/photo_2024-07-05_19-17-13.jpg);
+font: 16pt &quot;Snap ITC&quot;;
+color: rgb(255, 255, 255);</string>
   </property>
   <widget class="QPushButton" name="pushButton_login">
    <property name="geometry">
@@ -26,14 +28,16 @@
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);
-font: 700 12pt &quot;Segoe UI&quot;;</string>
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 15pt &quot;Segoe Print&quot;;
+color: rgb(255, 255, 255);
+</string>
    </property>
    <property name="text">
     <string>Log In</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_2">
+  <widget class="QPushButton" name="pushButton_forgetpassword">
    <property name="geometry">
     <rect>
      <x>430</x>
@@ -43,8 +47,10 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);
-font: 700 12pt &quot;Segoe UI&quot;;</string>
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 12pt &quot;Segoe Print&quot;;
+color: rgb(255, 255, 255);
+</string>
    </property>
    <property name="text">
     <string>Forget Password</string>
@@ -60,8 +66,10 @@ font: 700 12pt &quot;Segoe UI&quot;;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 16pt &quot;Sitka&quot;;
-color: rgb(255, 255, 255);</string>
+    <string notr="true">
+font: 700 15pt &quot;Segoe Print&quot;;
+color: rgb(255, 255, 255);
+</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_password">
@@ -74,8 +82,10 @@ color: rgb(255, 255, 255);</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 16pt &quot;Sitka&quot;;
-color: rgb(255, 255, 255);</string>
+    <string notr="true">
+font: 700 15pt &quot;Segoe Print&quot;;
+color: rgb(255, 255, 255);
+</string>
    </property>
    <property name="echoMode">
     <enum>QLineEdit::Password</enum>
@@ -92,9 +102,9 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">background-color: rgb(255, 255, 255);
-font: 14pt &quot;Segoe UI&quot;;
+font: 700 15pt &quot;Segoe Print&quot;;
 color: rgb(255, 255, 255);
-font: 700 14pt &quot;Segoe UI&quot;;</string>
+</string>
    </property>
    <property name="text">
     <string>username</string>
@@ -110,8 +120,10 @@ font: 700 14pt &quot;Segoe UI&quot;;</string>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);
-font: 700 14pt &quot;Segoe UI&quot;;</string>
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 15pt &quot;Segoe Print&quot;;
+color: rgb(255, 255, 255);
+</string>
    </property>
    <property name="text">
     <string>password</string>

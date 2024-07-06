@@ -2,7 +2,7 @@
 #define LOGINDIALOG_H
 
 #include <QDialog>
-
+#include "resetpassworddialog.h"
 namespace Ui {
 class LogInDialog;
 }
@@ -17,6 +17,7 @@ public:
 
 private slots:
     void on_pushButton_login_clicked();
+    void on_pushButton_forgetpassword_clicked();
 
 private:
     Ui::LogInDialog *ui;

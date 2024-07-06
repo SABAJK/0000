@@ -14,22 +14,30 @@
    <string>Dialog</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-image: url(:/photo_2024-07-05_19-17-13.jpg);</string>
+   <string notr="true">background-image: url(:/photo_2024-07-05_19-17-13.jpg);
+font: 16pt &quot;Snap ITC&quot;;
+color: rgb(255, 255, 255);</string>
   </property>
   <widget class="QLabel" name="label_5">
    <property name="geometry">
     <rect>
-     <x>340</x>
+     <x>300</x>
      <y>210</y>
-     <width>61</width>
+     <width>121</width>
      <height>21</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 15pt &quot;Segoe Print&quot;;
+color: rgb(255, 255, 255);
+</string>
    </property>
    <property name="text">
     <string>password</string>
    </property>
   </widget>
-  <widget class="QLineEdit" name="lineEdit_address">
+  <widget class="QLineEdit" name="lineEdit_email">
    <property name="geometry">
     <rect>
      <x>442</x>
@@ -37,6 +45,12 @@
      <width>151</width>
      <height>31</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 10pt &quot;Segoe Print&quot;;
+color: rgb(255, 255, 255);
+</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_phonenumber">
@@ -48,15 +62,27 @@
      <height>31</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 10pt &quot;Segoe Print&quot;;
+color: rgb(255, 255, 255);
+</string>
+   </property>
   </widget>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>340</x>
+     <x>300</x>
      <y>50</y>
-     <width>61</width>
+     <width>121</width>
      <height>21</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 13pt &quot;Segoe Print&quot;;
+color: rgb(255, 255, 255);
+</string>
    </property>
    <property name="text">
     <string>name</string>
@@ -71,6 +97,12 @@
      <height>31</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 10pt &quot;Segoe Print&quot;;
+color: rgb(255, 255, 255);
+</string>
+   </property>
   </widget>
   <widget class="QPushButton" name="pushButton_register">
    <property name="geometry">
@@ -81,6 +113,12 @@
      <height>41</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 15pt &quot;Segoe Print&quot;;
+color: rgb(255, 255, 255);
+</string>
+   </property>
    <property name="text">
     <string>Register</string>
    </property>
@@ -88,24 +126,36 @@
   <widget class="QLabel" name="label_4">
    <property name="geometry">
     <rect>
-     <x>340</x>
+     <x>300</x>
      <y>170</y>
-     <width>61</width>
+     <width>121</width>
      <height>20</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 15pt &quot;Segoe Print&quot;;
+color: rgb(255, 255, 255);
+</string>
+   </property>
    <property name="text">
-    <string>address</string>
+    <string>email</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>340</x>
+     <x>300</x>
      <y>90</y>
-     <width>61</width>
+     <width>121</width>
      <height>21</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 15pt &quot;Segoe Print&quot;;
+color: rgb(255, 255, 255);
+</string>
    </property>
    <property name="text">
     <string>username</string>
@@ -120,6 +170,12 @@
      <height>31</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 10pt &quot;Segoe Print&quot;;
+color: rgb(255, 255, 255);
+</string>
+   </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_password">
    <property name="geometry">
@@ -130,18 +186,103 @@
      <height>31</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 10pt &quot;Segoe Print&quot;;
+color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="echoMode">
+    <enum>QLineEdit::Password</enum>
+   </property>
   </widget>
   <widget class="QLabel" name="label_3">
    <property name="geometry">
     <rect>
-     <x>340</x>
+     <x>300</x>
      <y>130</y>
-     <width>61</width>
+     <width>121</width>
      <height>20</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 12pt &quot;Segoe Print&quot;;
+color: rgb(255, 255, 255);
+</string>
+   </property>
    <property name="text">
     <string>phone number</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_username_2">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>200</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 10pt &quot;Segoe Print&quot;;
+color: rgb(255, 255, 255);
+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>250</y>
+     <width>121</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 12pt &quot;Segoe Print&quot;;
+color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>phone number</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_phonenumber_2">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>240</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 10pt &quot;Segoe Print&quot;;
+color: rgb(255, 255, 255);
+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>210</y>
+     <width>121</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(255, 255, 255);
+font: 700 15pt &quot;Segoe Print&quot;;
+color: rgb(255, 255, 255);
+</string>
+   </property>
+   <property name="text">
+    <string>username</string>
    </property>
   </widget>
  </widget>

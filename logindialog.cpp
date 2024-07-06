@@ -1,6 +1,5 @@
 #include "LogInDialog.h"
 #include "ui_LogInDialog.h"
-#include "SignUp.h"
 #include <QMessageBox>
 
 LogInDialog::LogInDialog(QWidget *parent) :
@@ -25,4 +24,8 @@ void LogInDialog::on_pushButton_login_clicked()
     } else {
         QMessageBox::warning(this, "Login Failed", "Invalid username or password.");
     }
+}
+void LogInDialog::on_pushButton_forgetpassword_clicked(){
+    ResetPasswordDialog resetPass;
+    resetPass.exec();
 }

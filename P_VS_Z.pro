@@ -13,6 +13,7 @@ SOURCES += \
     loginmanager.cpp \
     main.cpp \
     mainwindow.cpp \
+    resetpassworddialog.cpp \
     signup.cpp \
     signupdialog.cpp
 
@@ -20,12 +21,14 @@ HEADERS += \
     logindialog.h \
     loginmanager.h \
     mainwindow.h \
+    resetpassworddialog.h \
     signup.h \
     signupdialog.h
 
 FORMS += \
     logindialog.ui \
     mainwindow.ui \
+    resetpassworddialog.ui \
     signupdialog.ui
 
 # Default rules for deployment.

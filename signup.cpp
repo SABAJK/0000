@@ -22,7 +22,7 @@ void SignUp::copyFileFromResources()
     QString writablePath = getWritableFilePath();
 
     if (QFile::exists(writablePath)) {
-        return; // اگر فایل قبلاً کپی شده، نیازی به کپی مجدد نیست
+        return;
     }
 
     QFile resourceFile(resourcePath);
