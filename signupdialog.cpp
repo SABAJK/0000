@@ -63,7 +63,7 @@ bool SignupDialog::isPhoneValid(const QString &phone)
 }
 bool SignupDialog::isPasswordStrong(const QString &password)
 {
-    QRegularExpression regExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[!@#\\$%\\^&\\*])[A-Za-z\\d!@#\\$%\\^&\\*]{8,}$");
+    QRegularExpression regExp("^(?=.*[A-Z]).{8,}$");
     return regExp.match(password).hasMatch();
 }
 
