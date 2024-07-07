@@ -26,22 +26,28 @@ void SignupDialog::on_pushButton_register_clicked()
                 QMessageBox::warning(this, "Invalid Email", "Please enter a valid email address.");
                 return;
             }
-
+        else{
             if (!isPhoneValid(phone)) {
                 QMessageBox::warning(this, "Invalid Phone Number", "Please enter a valid phone number.");
                 return;
+            }else{
+                if(!isPasswordStrong(password)){
+                    QMessageBox::warning(this, "Weak password", "Please enter a stronger password at least one capital");
+                }else{
+                    SignUp signUp(name, username, phone, email, password);
+
+                    if (signUp.saveUser()) {
+                        QMessageBox::information(this, "Registration Successful", "User registered successfully.");
+                    } else {
+                        QMessageBox::warning(this, "Registration Failed", "User registration failed.");
+                    }
+                }
             }
-         if(!isPasswordStrong(password)){
-             QMessageBox::warning(this, "Weak password", "Please enter a stronger password at least one capital");
-         }
 
-        SignUp signUp(name, username, phone, email, password);
-
-        if (signUp.saveUser()) {
-            QMessageBox::information(this, "Registration Successful", "User registered successfully.");
-        } else {
-            QMessageBox::warning(this, "Registration Failed", "User registration failed.");
         }
+
+
+
 }
 
 bool SignupDialog::isEmailValid(const QString &email)
