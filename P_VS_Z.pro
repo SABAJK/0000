@@ -1,4 +1,5 @@
 QT       += core gui
+QT += network
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -9,19 +10,25 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    client.cpp \
     logindialog.cpp \
     loginmanager.cpp \
     main.cpp \
     mainwindow.cpp \
     resetpassworddialog.cpp \
+    server.cpp \
     signup.cpp \
     signupdialog.cpp
 
 HEADERS += \
+    client.h \
+    client.h \
     logindialog.h \
     loginmanager.h \
     mainwindow.h \
     resetpassworddialog.h \
+    server.h \
+    server.h \
     signup.h \
     signupdialog.h
 
