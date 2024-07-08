@@ -10,7 +10,13 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    Bullet.cpp \
+    Plant.cpp \
+    Score.cpp \
+    Sun.cpp \
+    Zombie.cpp \
     client.cpp \
+    game.cpp \
     logindialog.cpp \
     loginmanager.cpp \
     main.cpp \
@@ -21,8 +27,14 @@ SOURCES += \
     signupdialog.cpp
 
 HEADERS += \
+    Bullet.h \
+    Plant.h \
+    Score.h \
+    Sun.h \
+    Zombie.h \
     client.h \
     client.h \
+    game.h \
     logindialog.h \
     loginmanager.h \
     mainwindow.h \
@@ -33,6 +45,7 @@ HEADERS += \
     signupdialog.h
 
 FORMS += \
+    game.ui \
     logindialog.ui \
     mainwindow.ui \
     resetpassworddialog.ui \
@@ -45,3 +58,18 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 
 RESOURCES += \
     resources.qrc
+
+DISTFILES += \
+    Bucket head zombie.jpg \
+    astronaut zombie.jpg \
+    boomerang.jpg \
+    field.jpg \
+    jalapino.jpg \
+    leaf hair zombie.jpg \
+    pea shooter.jpg \
+    plum mine.jpg \
+    purple hair zombie.jpg \
+    regular zombie.jpg \
+    tall zombie.jpg \
+    two_peashooter.jpg \
+    walnut.jpg
